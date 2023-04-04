@@ -20,7 +20,7 @@ pipeline {
             }
             steps {
                 sshagent(['remote-server']) {
-                    sh 'ssh remote-user@remote-server "docker pull bsever1/tomcat:2.0 && docker run -d -p 8082:8080 bsever/tomcat:2.0"'
+                    sh 'ssh remote-user@remote-server "docker pull bsever1/tomcat:2.0 && docker run -d -p 8082:8080 bsever1/tomcat:2.0"'
                 }
             }
         }
