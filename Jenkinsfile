@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t bsever/tomcat:${env.BRANCH_NAME} .'
+                sh 'docker build -t bsever1/tomcat:${env.BRANCH_NAME} .'
             }
         }
         stage('Push') {
